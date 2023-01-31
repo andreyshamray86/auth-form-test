@@ -1,0 +1,25 @@
+@import '../../../common/variables';
+@import '../../../common/mixins';
+
+.button {
+  width: 48%;
+  height: 50px;
+  border: none;
+  font-family: inherit;
+  font-size: 20px;
+  color: $dark-base4;
+  background-color: $dark-base3;
+  border-radius: 2px;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.9;
+    transform: scale(0.97);
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

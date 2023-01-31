@@ -1,0 +1,22 @@
+@import '../../../common/variables';
+@import '../../../common/mixins';
+
+.wrapper {
+  height: 100vh;
+  background-color: $dark-base1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+.wrapper-light {
+  background-color: $dark-base4;
+}
+
+.title {
+  font-size: 24px;
+}

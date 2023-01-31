@@ -1,0 +1,64 @@
+@import '../../../common/variables';
+
+.wrapper {
+  width: 50px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 4px;
+  background-color: $dark-base1;
+  border: 2px solid $dark-base4;
+  border-radius: 50px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
+
+.wrapper-light {
+  background-color: $dark-base3;
+  border-color: $dark-base3;
+}
+
+.circle-night {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: $dark-base4;
+  position: relative;
+  transform: translateX(0);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.circle-day {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: $dark-base4;
+  position: relative;
+  transform: translateX(19px);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: $dark-base1;
+  transition: all 0.3s;
+}
+
+.noshadow {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  background-color: $dark-base1;
+  transition: all 0.3s;
+}

@@ -1,0 +1,59 @@
+@import '../../../../common/variables';
+@import '../../../../common/mixins';
+
+.wrapper {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+
+  @include mobile {
+    height: 30px;
+  }
+}
+
+.label {
+  color: $dark-base4;
+  font-size: 20px;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}
+
+.label-light {
+  color: $dark-base1;
+}
+
+.input {
+  width: 70%;
+  height: 100%;
+  padding-left: 10px;
+  border: none;
+  color: $dark-base3;
+  background-color: $dark-base1;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid $dark-base3;
+  border-radius: 2px;
+  font-family: inherit;
+  font-size: 18px;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $dark-base3;
+  }
+
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+.input-light {
+  color: $dark-base1;
+  background-color: $dark-base4;
+  border-bottom-color: $dark-base3;
+}

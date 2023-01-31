@@ -1,0 +1,87 @@
+@import '../../../common/variables';
+@import '../../../common/mixins';
+
+.wrapper {
+  width: 40%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: $dark-base1;
+  border-radius: 5px;
+  padding: 20px 30px 40px;
+  box-shadow: rgba($dark-base4, 0.8) 0 7px 29px 0;
+
+  @include medium {
+    width: 60%;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  @include small {
+    padding: 10px;
+  }
+}
+
+.wrapper-light {
+  background-color: $dark-base4;
+  box-shadow: rgba($dark-base1, 0.8) 0 7px 29px 0;
+}
+
+.title {
+  color: $dark-base4;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+
+  @include medium {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.title-light {
+  color: $dark-base1;
+}
+
+.inputs-wrapper {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.buttons-wrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+
+  @include mobile {
+    width: 60%;
+    flex-direction: column;
+  }
+
+  @include small {
+    width: 100%;
+  }
+}
+
+.error-message {
+  margin-bottom: 30px;
+  color: $error;
+
+  @include medium {
+    font-size: 14px;
+  }
+
+  @include small {
+    font-size: 12px;
+  }
+}
