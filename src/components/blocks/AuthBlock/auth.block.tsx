@@ -86,7 +86,9 @@ const AuthBlock: FC = () => {
           </div>
         </>
       ) : (
-        <p className={styles.title}>Hello {user}</p>
+        <p className={`${styles.title} ${!isDark && styles['title-light']}`}>
+          Hello {user}
+        </p>
       )}
     </div>
   )
